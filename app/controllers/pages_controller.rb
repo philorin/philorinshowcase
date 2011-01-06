@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-
+  
   def home
     @title = "Home"
   end
@@ -15,5 +15,5 @@ class PagesController < ApplicationController
   def personal
     @title = "Personal"
   end
-  
+
 end

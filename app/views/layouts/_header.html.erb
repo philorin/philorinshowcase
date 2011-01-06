@@ -1,0 +1,16 @@
+<header>
+  <% logo = image_tag("philorin.jpg",
+    :height => 110,
+    
+    :alt => "Phil Orin",
+    :class => "round") %>
+  <%= link_to logo, root_path %>
+  <nav class="round">
+    <ul>
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Professional", professional_path %></li>
+      <li><%= link_to "Personal", personal_path %></li>
+      <li><%= link_to "Contact", contact_path %></li>
+    </ul>
+  </nav>
+</header>
