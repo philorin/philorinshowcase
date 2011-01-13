@@ -1,18 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<header>
-  <% logo = image_tag("philorin.jpg",
-    :height => 110,
-    
-    :alt => "Phil Orin",
-    :class => "round") %>
-  <%= link_to logo, root_path %>
-  <nav class="round">
-    <ul>
-      <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "Professional", professional_path %></li>
-      <li><%= link_to "Personal", personal_path %></li>
-      <li><%= link_to "Contact", contact_path %></li>
-    </ul>
-  </nav>
-</header>
+<table style="height: 100%; width: 100%; border-color: #262B52">
+  <tr>
+    <td style="max-width: 700px; min-width: 700px;">
+      <ul id="menu">
+        <li><%= link_to "Contact", contact_path %></li>
+        <li><%= link_to "Personal", personal_path %></li>
+        <li><%= link_to "Professional", professional_path %></li>
+        <li><%= link_to "Home", root_path %></li>
+      </ul>
+    </td>
+  </tr>
+</table>
