@@ -1,13 +1,13 @@
 /*BODY*/
 
 table {
-   background-color: #262B52;
+   background-color: #3E4370;
    border: none;
    padding: 0;
    margin: 0;
    }
 body, td, tr {
-   background-color: #262B52;
+   background-color: #3E4370;
 }
 
 /* Logo Header */
@@ -229,8 +229,9 @@ td.menuRoot {
 	margin: 0px;
 	padding: 0px;
         height: 25px;
-        background-color: #262B52;
+        
         border: none;
+        display: inline;
 }
 #menu li {
 	list-style-type: none;
@@ -245,7 +246,7 @@ td.menuRoot {
 }
 #menu a {
 	padding: 4px 25px 4px 25px;
-	display: block;
+	
 	color: white;
 	font-size: 10pt;
 	font-weight: bold;
