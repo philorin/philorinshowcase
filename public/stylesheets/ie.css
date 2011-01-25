@@ -1,113 +1,66 @@
-.round {
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;
-}
 /*BODY*/
 
-body, td {
-   background-color: black;
+table {
+   background-color: #3E4370;
+   border: none;
+   padding: 0;
+   margin: 0;
    }
+body, td, tr {
+   background-color: #3E4370;
+}
 
 /* Logo Header */
 
 #logo-header img {
 
-    height: 40px;
+    height: 50px;
     padding: 5px;
     background: white;
 }
 
 /* Top Menu Navigation */
 
-#nav-menu {
-
-    background-color: white;
-    padding: 5px;
-    white-space: nowrap;
-    margin: 0;
-    list-style-type: none;
-    display: inline;
-    font-weight: bold;
-}
-
-#nav-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#nav-menu li {
+.nav-menu {
+    background-color: black;
     float: right;
-    /* margin: 0 0.15em; */
-}
+    }
 
-#nav-menu li a
-{
-background: url(background.gif) #fff bottom left repeat-x;
-height: 2em;
-line-height: 2em;
-float: right;
-width: 9em;
-display: block;
-border: none;
-color: #0d2474;
-text-decoration: none;
-text-align: center;
-}
+.menuText {
+    font-size: 10pt;
+    font-weight: bold;
+    color: black;
+    padding: 2px 12px 2px 12px;
+    text-align: center;
+    display: inline;
 
-
-#content {
-  float: none;
-  margin-top: 4em;
-  font-size: 100%;
-  padding: 20px;
-  background: #fff;
-  border-style: none;
 }
 /* FOOTER */
 
-#footer-menu .navigation {
-  float: none;
-  background: #fff;
-}
-
-#footer-menu {
+.footer-menu {
   text-align: center;
-  /*width: 700px;*/
   margin-left: auto;
   margin-right: auto;
-  background: #fff;
+  background: white;
+  font-size: 8pt;
+  font-weight: bold;
+  background-color: inherit;
+  width: 700px;
+  min-width: 700px;
+  max-width: 700px;
+  padding: 25px 25px 25px 25px;
 }
-.thinBorder {
-	border-collapse: collapse;
-	border-style: solid;
-	border-width: 1px;
-	border-color: black;
-        background-color: white;
-}
-
-#footer-menu ul {
-    list-style: none;
-}
-
-#footer-menu li {
-    /*margin: 0 0.15em;*/
-}
-
-#footer-menu li a {
-    font-size: 8pt;
-    font-weight: bold;
-    color: black;
+#summary a {
+    text-align: left;
+    font-size: 11pt;
     text-decoration: none;
-    text-align: center;
+    color: black;
+    padding: 2px 2px 2px 2px;
+    margin: 2px 2px 2px 2px;
 }
 
-.footerText {
-    font-size: 8pt;
-    font-weight: bold;
-}
 /* a TAGS*/
+
 
 a {
 	font-family: "Verdana", "Arial", "Times New Roman";
@@ -115,17 +68,33 @@ a {
 	color: black;
 	font-size: 10pt;
 }
-a.contentText {
-	font-size: 9pt;
-        font-family: "Verdana", "Arial", "Times New Roman";
-	text-decoration: none;
-	color: black;
-}
-a.titleLink {
+.titleLink {
 	font-size: 12pt;
 	color: blue;
 	font-weight: bold;
 	text-decoration: underline;
+        text-align: left;
+        background-color: white;
+}
+td.companyLink{
+    text-align: left;
+    background-color: white;
+}
+a.companyLink {
+    font-size: 12pt;
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: left;
+    background-color: white;
+}
+.timeWorked {
+	font-size: 10pt;
+	font-weight: bold;
+	color: black;
+        white-space: nowrap;
+        text-align: right;
+        background-color: white;
 }
 a.contentLink {
 	font-size: 9pt;
@@ -136,13 +105,6 @@ a.contentLink {
 a.contentLink:hover {
 	text-decoration: underline;
 }
-a.titleText {
-	width: 100%;
-	text-align: center;
-	font-size: 25pt;
-	font-weight: bold;
-	color: #123B5E;
-}
 
 a:hover {
   color: #069;
@@ -152,37 +114,19 @@ a:hover {
 a:visited {
   color: #069;
 }
-
-a.menuText {
-	font-size: 10pt;
-	font-weight: bold;
-	color: white;
-	position: relative;
-	top: 2px;
+ul.contentText {
+	font-size: 11pt;
+        text-align: left;
+        text-decoration: none;
 }
-
-/*TABLE*/
-
-
-
-td.menuRoot {
-	width: 1px;
-	padding: 0px 20px 0px 20px;
-	border-width: 0px 1px 0px 0px;
-	border-color: #48545E;
-}
-
-tr.frontDoorPoint {
-	background-color: white;
-	border-width: 0px 0px 1px 0px;
-}
-
 a.contentText {
 	font-size: 9pt;
+        text-align: left;
+        text-decoration: none;
 
 }
 a.titleLink {
-	font-size: 12pt;
+	font-size: 9pt;
 	color: blue;
 	font-weight: bold;
 	text-decoration: underline;
@@ -197,14 +141,14 @@ a.contentLink {
 a.contentLink:hover {
 	text-decoration: underline;
 }
-a.titleText {
+.titleText {
 	width: 100%;
 	text-align: center;
 	font-size: 25pt;
 	font-weight: bold;
 	color: #123B5E;
 }
-a.header1Text {
+.header1Text {
 	font-size: 20pt;
 	font-weight: bold;
 	color: #123B5E;
@@ -219,16 +163,36 @@ a.header3Text {
 	font-weight: bold;
 	color: #123B5E;
         white-space: nowrap;
-}
-a.footerText {
-	font-size: 8pt;
-	font-weight: bold;
+        }
+td.positionText{
+    background-color: white;
+    text-align: left;
 }
 a.positionText {
 	font-size: 10pt;
 	font-weight: bold;
 	color: #180000;
 
+}
+/*TABLE*/
+td.menuRoot {
+	width: 1px;
+	padding: 0px 20px 0px 20px;
+	border-width: 0px 1px 0px 0px;
+	border-color: #48545E;
+}
+tr.frontDoorPoint {
+	background-color: white;
+	border-width: 0px 0px 1px 0px;
+}
+.resumeSection {
+    background-color: white;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 700px;
+    min-width: 700px;
+    max-width: 700px;
 }
 .thinBorder {
 	border-collapse: collapse;
@@ -239,7 +203,7 @@ a.positionText {
         width: 700px;
         min-width: 700px;
         max-width: 700px;
-        padding: 25px 25px 25px 25px;
+        /*padding: 25px 25px 25px 25px;*/
 }
 
 .noBorder {
@@ -256,4 +220,390 @@ td.menuRoot {
 	padding: 0px 20px 0px 20px;
 	border-width: 0px 1px 0px 0px;
 	border-color: #48545E;
+}
+
+
+
+#menu,
+#menu ul {
+	margin: 0px;
+	padding: 0px;
+        height: 25px;
+
+        border: none;
+        display: inline;
+}
+#menu li {
+	list-style-type: none;
+        border: none;
+        font-size: 10pt;
+}
+
+
+#menu li,
+#menu a {
+	float: right;
+}
+#menu a {
+	padding: 4px 25px 4px 25px;
+
+	color: white;
+	font-size: 10pt;
+	font-weight: bold;
+}
+#menu a:hover,
+#menu a.menu_open {
+	color: #123B5E;
+	background-color: #EDEFF4;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+#menu ul {
+	visibility: hidden;
+	position: absolute;
+	background-color: #EDEFF4;
+	border-collapse: collapse;
+	border-style: solid;
+	border-width: 0px 1px 1px 1px;
+	border-color: #123B5E;
+}
+#menu ul li {
+	white-space: nowrap;
+	width: auto;
+	float: right;
+}
+#menu ul a {
+	color: #123B5E;
+	padding: 5px 5px 5px 5px;
+        text-align: right;
+}
+
+#menu ul a:hover,
+#menu ul a.menu_open {
+	text-decoration: underline;
+}
+
+ul.skillList {
+    background-color: white;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    border: none;
+    border-color: white;
+    margin: 0;
+}
+
+.underConstruction {
+    font-size: large;
+    color: yellow;
+    text-align: center;
+    padding: 25px 200px 25px 200px;
+    white-space: nowrap;
+
+
+}/*BODY*/
+
+table {
+   background-color: #3E4370;
+   border: none;
+   padding: 0;
+   margin: 0;
+   }
+body, td, tr {
+   background-color: #3E4370;
+}
+
+/* Logo Header */
+
+#logo-header img {
+
+    height: 50px;
+    padding: 5px;
+    background: white;
+}
+
+/* Top Menu Navigation */
+
+.nav-menu {
+    background-color: black;
+    float: right;
+    }
+
+.menuText {
+    font-size: 10pt;
+    font-weight: bold;
+    color: black;
+    padding: 2px 12px 2px 12px;
+    text-align: center;
+    display: inline;
+
+}
+/* FOOTER */
+
+.footer-menu {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  font-size: 8pt;
+  font-weight: bold;
+  background-color: inherit;
+  width: 700px;
+  min-width: 700px;
+  max-width: 700px;
+  padding: 25px 25px 25px 25px;
+}
+#summary a {
+    text-align: left;
+    font-size: 11pt;
+    text-decoration: none;
+    color: black;
+    padding: 2px 2px 2px 2px;
+    margin: 2px 2px 2px 2px;
+}
+
+/* a TAGS*/
+
+
+a {
+	font-family: "Verdana", "Arial", "Times New Roman";
+	text-decoration: none;
+	color: black;
+	font-size: 10pt;
+}
+.titleLink {
+	font-size: 12pt;
+	color: blue;
+	font-weight: bold;
+	text-decoration: underline;
+        text-align: left;
+        background-color: white;
+}
+td.companyLink{
+    text-align: left;
+    background-color: white;
+}
+a.companyLink {
+    font-size: 12pt;
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: left;
+    background-color: white;
+}
+.timeWorked {
+	font-size: 10pt;
+	font-weight: bold;
+	color: black;
+        white-space: nowrap;
+        text-align: right;
+        background-color: white;
+}
+a.contentLink {
+	font-size: 9pt;
+	color: blue;
+	font-weight: bold;
+	text-decoration: underline;
+}
+a.contentLink:hover {
+	text-decoration: underline;
+}
+
+a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #069;
+}
+ul.contentText {
+	font-size: 11pt;
+        text-align: left;
+        text-decoration: none;
+}
+a.contentText {
+	font-size: 9pt;
+        text-align: left;
+        text-decoration: none;
+
+}
+a.titleLink {
+	font-size: 9pt;
+	color: blue;
+	font-weight: bold;
+	text-decoration: underline;
+        padding-left: 0;
+}
+a.contentLink {
+	font-size: 9pt;
+	color: blue;
+	font-weight: bold;
+	text-decoration: underline;
+}
+a.contentLink:hover {
+	text-decoration: underline;
+}
+.titleText {
+	width: 100%;
+	text-align: center;
+	font-size: 25pt;
+	font-weight: bold;
+	color: #123B5E;
+}
+.header1Text {
+	font-size: 20pt;
+	font-weight: bold;
+	color: #123B5E;
+}
+a.header2Text {
+	font-size: 15pt;
+	font-weight: bold;
+	color: #123B5E;
+}
+a.header3Text {
+	font-size: 10pt;
+	font-weight: bold;
+	color: #123B5E;
+        white-space: nowrap;
+        }
+td.positionText{
+    background-color: white;
+    text-align: left;
+}
+a.positionText {
+	font-size: 10pt;
+	font-weight: bold;
+	color: #180000;
+
+}
+/*TABLE*/
+td.menuRoot {
+	width: 1px;
+	padding: 0px 20px 0px 20px;
+	border-width: 0px 1px 0px 0px;
+	border-color: #48545E;
+}
+tr.frontDoorPoint {
+	background-color: white;
+	border-width: 0px 0px 1px 0px;
+}
+.resumeSection {
+    background-color: white;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 700px;
+    min-width: 700px;
+    max-width: 700px;
+}
+.thinBorder {
+	border-collapse: collapse;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+        background-color: white;
+        width: 700px;
+        min-width: 700px;
+        max-width: 700px;
+        /*padding: 25px 25px 25px 25px;*/
+}
+
+.noBorder {
+        background-color: white;
+        width: 100%;
+
+  }
+.clickable {
+	cursor: pointer;
+}
+
+td.menuRoot {
+	width: 1px;
+	padding: 0px 20px 0px 20px;
+	border-width: 0px 1px 0px 0px;
+	border-color: #48545E;
+}
+
+
+
+#menu,
+#menu ul {
+	margin: 0px;
+	padding: 0px;
+        height: 25px;
+
+        border: none;
+        display: inline;
+}
+#menu li {
+	list-style-type: none;
+        border: none;
+        font-size: 10pt;
+}
+
+
+#menu li,
+#menu a {
+	float: right;
+}
+#menu a {
+	padding: 4px 25px 4px 25px;
+
+	color: white;
+	font-size: 10pt;
+	font-weight: bold;
+}
+#menu a:hover,
+#menu a.menu_open {
+	color: #123B5E;
+	background-color: #EDEFF4;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+#menu ul {
+	visibility: hidden;
+	position: absolute;
+	background-color: #EDEFF4;
+	border-collapse: collapse;
+	border-style: solid;
+	border-width: 0px 1px 1px 1px;
+	border-color: #123B5E;
+}
+#menu ul li {
+	white-space: nowrap;
+	width: auto;
+	float: right;
+}
+#menu ul a {
+	color: #123B5E;
+	padding: 5px 5px 5px 5px;
+        text-align: right;
+}
+
+#menu ul a:hover,
+#menu ul a.menu_open {
+	text-decoration: underline;
+}
+
+ul.skillList {
+    background-color: white;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    border: none;
+    border-color: white;
+    margin: 0;
+}
+
+.underConstruction {
+    font-size: large;
+    color: yellow;
+    text-align: center;
+    padding: 25px 200px 25px 200px;
+    white-space: nowrap;
+
+
 }

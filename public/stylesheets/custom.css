@@ -17,6 +17,7 @@ body, td, tr {
     height: 50px;
     padding: 5px;
     background: white;
+    text-align: left;
 }
 
 /* Top Menu Navigation */
@@ -298,8 +299,6 @@ ul.skillList {
     font-size: large;
     color: yellow;
     text-align: center;
-    padding: 25px 200px 25px 200px;
-    white-space: nowrap;
+    width: 300px;
 
-    
 }

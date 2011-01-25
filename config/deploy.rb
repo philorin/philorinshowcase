@@ -1,13 +1,23 @@
 set :application, "philorinshowcase"
 set :repository,  "git@GitServer:philorin/philorinshowcase.git"
-
+# ssh_options[:port] = 22222
+# ssh_options[:keys] = %w(/c/EC2_Keys/philkey.pem)
+# set :ssh_options,{:keys => '/c/EC2_Keys/philkey.pem', :port => 22222, :forward_agent => true}
+set :ssh_options,{:keys => 'test.pem', :port => 22222, :forward_agent => false}
 set :scm, :git
-# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
+role :web, "philorin.com"                          
+role :app, "philorin.com"                         
+role :db,  "philorin.com", :primary => true    
+set :deploy_to, "/home/ubuntu"
+set :user, "ubuntu"
+set :use_sudo, false
+set :password, ""
 
-role :web, "www.philorin.com"                          # Your HTTP server, Apache/etc
-role :app, "www.philorin.com"                          # This may be the same as your `Web` server
-role :db,  "www.philorin.com", :primary => true # This is where Rails migrations will run
-# role :db,  "www.philorin.com"
+
+
+
+
+
 
 # If you are using Passenger mod_rails uncomment this:
 # if you're still using the script/reapear helper you will need
